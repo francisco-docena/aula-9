@@ -12,7 +12,11 @@ function draw()
   if (keyDown("up")) {
     quad.y=quad.y-2
     }
-    
+    if (keyDown("right")) {
+      quad.x=quad.x+2
+      }if (keyDown("left")) {
+        quad.x=quad.x-2
+        }
   drawSprites();
 }
 
